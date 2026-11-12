@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-theme="winter">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#182e28">
+<title>KMA Coffee Run</title>
+<link rel="stylesheet" href="/app.css">
+<script defer src="/app.js"></script>
+</head>
+<body>
+<header><div class="bar"><a href="/" class="brand"><span aria-hidden="true">☕</span> KMA Coffee Run</a><button id="profile" class="quiet" hidden>My profile</button></div></header>
+<main>
+<section class="hero">
+<div><p id="season" class="eyebrow">❄ WINTER</p><h1>Coffee run</h1><p>Save your Starbucks favorite and join the next office run.</p></div>
+<div class="illustration" aria-hidden="true"><span class="flake one">✦</span><span class="flake two">✧</span><span class="steam">∿ ∿</span><span class="cup">KMA</span><span class="saucer"></span></div>
+</section>
+<p id="notice" role="status" hidden></p>
+<section id="login" class="card" hidden>
+<h2>Join your team</h2>
+<form id="signup"><label>Your name<input name="name" maxlength="40" autocomplete="name" required></label><label>Team code<input name="code" type="password" required></label><button>Join team</button></form>
+<details><summary>Already have a profile?</summary><form id="restore"><label>Recovery key<input name="key" required></label><button>Restore profile</button></form></details>
+</section>
+<div class="grid" id="dashboard" hidden>
+<section class="card"><h2>Team run</h2><div id="run"></div></section>
+<aside class="card"><h2>Your favorite</h2><p id="favorite"></p><button class="secondary" id="editFavorite">Edit favorite</button></aside>
+</div>
+</main>
+<dialog id="dialog"><div class="dialog-head"><h2 id="dialogTitle"></h2><button class="quiet" id="dismiss" aria-label="Close dialog">×</button></div><div id="dialogBody"></div></dialog>
+</body></html>
